@@ -1,10 +1,14 @@
 import React from 'react';
+import Products from '../../Products/Products';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Home = () => {
     return (
-        <div>
+        <>
+            <PageTitle title="Home"></PageTitle>
             <h1>home</h1>
-        </div>
+            <Products></Products>
+        </>
     );
 };
 
