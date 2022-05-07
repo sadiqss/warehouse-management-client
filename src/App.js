@@ -8,6 +8,10 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Inventory from './Pages/Inventory/Inventory';
+import Manage from './Pages/Manage/Manage';
+import { ToastContainer } from 'react-toastify';
+import RequireAuth from './Pages/Login/RequireAuh/RequireAuth';
+
 
 function App() {
   return (
@@ -18,9 +22,15 @@ function App() {
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/manage' element={
+          <RequireAuth>
+            <Manage></Manage>
+          </RequireAuth>
+        }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
