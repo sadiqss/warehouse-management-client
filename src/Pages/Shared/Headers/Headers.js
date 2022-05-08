@@ -21,6 +21,7 @@ const Headers = () => {
                         </NavDropdown>
                     </Nav>
                     <Nav>
+                        <Nav.Link as={Link} to='blog' >Blog</Nav.Link>
                         <Nav.Link as={Link} to='inventory' >Inventory</Nav.Link>
                         <Nav.Link as={Link} to='login' >
                             Log In

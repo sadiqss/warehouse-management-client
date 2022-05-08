@@ -1,3 +1,13 @@
+# Saltburn Inventory
+* This website is designed to manage products stored and available in saltburn inventory
+
+* useful links
+[github code for client side](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-sadiqss).
+[github code for server side](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-sadiqss).
+[Live site link](https://saltburn-inventory.web.app/).
+[Stakeoverflow question link](https://stackoverflow.com/questions/72134453/where-should-i-install-axios-js-server-side-or-client-side/72134553#72134553).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
