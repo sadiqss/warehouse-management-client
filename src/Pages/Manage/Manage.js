@@ -7,7 +7,7 @@ const Manage = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Sure to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://glacial-forest-41137.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

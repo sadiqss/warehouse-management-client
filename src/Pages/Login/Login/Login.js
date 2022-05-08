@@ -41,7 +41,7 @@ const Login = () => {
         const email = emailRef.current.value;
         const pass = passRef.current.value;
         await signInWithEmailAndPassword(email, pass);
-        const { data } = await axios.post('http://localhost:5000/login', { email });
+        const { data } = await axios.post('https://glacial-forest-41137.herokuapp.com/login', { email });
         console.log(data)
     }
     const navigateRegister = event => {
