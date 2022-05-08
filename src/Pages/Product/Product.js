@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Product.css';
 
 const Product = ({ product }) => {
     const { _id, name, price, description, img } = product;
@@ -8,7 +9,7 @@ const Product = ({ product }) => {
         navigate(`/product/${id}`);
     }
     return (
-        <div className='service'>
+        <div className='product'>
             <img className='w-100' src={img} alt="" />
             <h2>{name}</h2>
             <p>Price: {price}</p>
